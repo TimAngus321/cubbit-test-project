@@ -1,0 +1,71 @@
+// Header Component
+.header-component {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .cubbit-logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .checkout-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .checkout {
+    color: rgb(22, 22, 22);
+    font-family: Nunito, Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    min-height: initial;
+    min-width: initial;
+  }
+  
+  .checkout-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  
+  .polygon-1 {
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2.5rem;
+    background-size: contain;
+    background-position: 0px center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  .polygon-2 {
+    display: flex;
+    justify-content: center;
+    width: 2rem;
+    height: 2.5rem;
+    background-size: contain;
+    background-position: 0px center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right: 0.5rem;
+  }
+  
+  .confirmation-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }

@@ -2,28 +2,28 @@ import React, { Fragment } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect,
 } from 'react-router-dom';
 import './App.scss';
-import  Header from './Screens/Components/header';
-import Confrimation from './Screens/Components/Pages/Confirmation/confirmation';
 import Confirmation from './Screens/Components/Pages/Confirmation/confirmation';
+import Checkout from './Screens/Components/Pages/Checkout/checkout';
 
 const App: React.FC = () => {
   return (
     <Router>
     <div className="App">
+    <Checkout />
       <Switch>
-        <Route
-        exact
-        path='/'
-        render={props => (
-          <Fragment>
-            <Header/>
-          </Fragment>
-        )} >
-
-        </Route>
+      <Route
+                path="/"
+                exact
+                render={() => {
+                    return (
+                      <Redirect to="/checkout" />
+                    )
+                }}
+              />
         <Route exact path='/confirmation' component={Confirmation} />
       </Switch>
     </div>

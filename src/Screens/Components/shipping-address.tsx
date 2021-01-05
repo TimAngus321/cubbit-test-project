@@ -78,24 +78,24 @@ const ShippingAddress = () => (
           </div>
         <div className="city-state-container">
           <div className="other-field-error-container">
-            <div>Other Information (optional)</div>
+            <div>City</div>
             <Field 
-            name="otherInformation"
-            className="other-field"
+            name="city"
+            className="city-field"
             />
-            {errors.otherInformation && touched.otherInformation ? 
-            <span className="other-error">
-            {errors.otherInformation}</span> : null}
+            {errors.city && touched.city ? 
+            <span className="city-error">
+            {errors.city}</span> : null}
             </div>
-            <div className="other-field-error-container">
-            <div>Other Information (optional)</div>
+            <div className="region-error-container">
+            <div>State/Religion/Province</div>
             <Field 
-            name="otherInformation"
-            className="other-field"
+            name="regionProvince"
+            className="region-field"
             />
-            {errors.otherInformation && touched.otherInformation ? 
-            <span className="other-error">
-            {errors.otherInformation}</span> : null}
+            {errors.region && touched.region ? 
+            <span className="region-error">
+            {errors.region}</span> : null}
             </div>
         </div>
          </Form>

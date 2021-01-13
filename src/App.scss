@@ -224,6 +224,112 @@ $error-red: rgb(234, 36, 60);
 
 // Shipping Address Component
 
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
 
+.shipping-form-style {
+  display: flex;
+  flex-direction: column;
+  border: 0.0625rem solid $cubbit-grey;
+}
 
+.shipping-form-header {
+  display: flex;
+  justify-content: left;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 31px;
+}
 
+.postalCode-field-error-containter {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 50px 25px 50px;
+  div {
+    margin-bottom: 10px;
+   }
+}
+
+.postalCode-field {
+  border: 0.0625rem solid $cubbit-grey;
+  height: 40px;
+}
+
+.other-field-error-container {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 50px 25px 50px;
+  div {
+    margin-bottom: 10px;
+   }
+}
+
+.other-field {
+  border: 0.0625rem solid $cubbit-grey;
+  height: 40px;
+}
+
+.postal-country-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 50px 25px 50px;
+}
+
+.postal-error-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 15px;
+    div {
+      margin-bottom: 10px;
+    }
+}
+
+.postal-address-field {
+  border: 0.0625rem solid $cubbit-grey;
+  width: 100%;
+  height: 40px;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 15px;
+    div {
+      margin-bottom: 10px;
+    }
+    select {
+      margin: 0;
+      padding: 0;
+      border: 0.0625rem solid $cubbit-grey;
+      width: 100%;
+      height: 100%;
+      font-size: 0.875rem;
+      font-family: Nunito;
+      font-weight: 300;
+    }
+}
+
+.city-state-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 50px 25px 50px;
+}
+
+.city-state-error-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 15px;
+    div {
+      margin-bottom: 10px;
+    }
+}

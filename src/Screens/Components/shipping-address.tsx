@@ -13,8 +13,13 @@ const AddressSchema = Yup.object().shape({
   });
 
 const ShippingAddress = () => (
-    <div>
-     <h3>Shipping Address</h3>
+    <div
+    className="shipping-form"
+    >
+     <h3
+     className="shipping-form-header">
+         Shipping Address
+    </h3>
      <Formik
        initialValues={{
          streetAddress: '',
@@ -31,9 +36,9 @@ const ShippingAddress = () => (
        }}
      >
        {({ errors, touched, values, handleChange, handleBlur }) => (
-        <Form className="contact-form-style">
+        <Form className="shipping-form-style">
         <div className="postalCode-field-error-containter">
-        <div>Postal Code</div>
+        <div>Street Address</div>
         <Field 
         name="postalCode" 
         type="postalCode" 
@@ -77,7 +82,7 @@ const ShippingAddress = () => (
                 </div>
           </div>
         <div className="city-state-container">
-          <div className="other-field-error-container">
+          <div className="city-field-error-container">
             <div>City</div>
             <Field 
             name="city"

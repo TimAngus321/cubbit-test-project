@@ -6,10 +6,8 @@ import * as Yup from 'yup';
  const emailRegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
  const ContactInfoSchema = Yup.object().shape({
-   firstName: Yup.string()
-     .required('First Name Required'),
-   lastName: Yup.string()
-     .required('Last Name Required'),
+   firstName: Yup.string().required('First Name Required'),
+   lastName: Yup.string().required('Last Name Required'),
    email: Yup.string().matches(emailRegExp, 'Invalid Email').email('Invalid email').required('Email Required'),
    phoneNumber: Yup.string().matches(phoneRegExp, 'Please add a valid phone number').required('Phone Number Required'),
  });

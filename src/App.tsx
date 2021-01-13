@@ -13,9 +13,9 @@ const App: React.FC = () => {
   return (
     <Router>
     <div className="App">
-    <Checkout />
+    {/* <Checkout /> */}
       <Switch>
-      <Route
+      {/* <Route
                 path="/"
                 exact
                 render={() => {
@@ -23,7 +23,8 @@ const App: React.FC = () => {
                       <Redirect to="/checkout" />
                     )
                 }}
-              />
+              /> */}
+        <Route exact path='/' component={Checkout} />
         <Route exact path='/confirmation' component={Confirmation} />
       </Switch>
     </div>
